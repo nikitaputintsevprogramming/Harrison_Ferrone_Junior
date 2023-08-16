@@ -13,6 +13,7 @@ public class LearningCurve : MonoBehaviour
 
         hero.PrintStatsInfo();
         hero2.PrintStatsInfo();
+        //hero2.Reset();
 
         Character heroine = new Character("Agatha");
         heroine.PrintStatsInfo();
@@ -24,6 +25,9 @@ public class LearningCurve : MonoBehaviour
 
         huntingBow.PrintWeaponStats();
         warBow.PrintWeaponStats();
+
+        Paladin knight = new Paladin("Sir Arthur", huntingBow);
+        knight.PrintStatsInfo();
     }
 
     void Update()
