@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
+     
+
     void Start()
     {
         Character hero = new Character();
-        Debug.LogFormat("Hero: {0} - {1} EXP", hero.name, hero.exp);
+        hero.PrintStatsInfo();
+
+        Character herione = new Character("Agatcha");
+        herione.PrintStatsInfo();
+
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        huntingBow.PrintWeaponInfo();
     }
 
     void Update()
