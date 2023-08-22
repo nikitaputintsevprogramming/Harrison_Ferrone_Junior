@@ -34,8 +34,14 @@ public class Character
         this.name = name;
     }
 
-    public void PrintStatsInfo()
+    public virtual void PrintStatsInfo()
     {
         Debug.LogFormat("Hero: {0} - {1} EXP", name, exp);
+    }
+
+    private void Reset()
+    {
+        name = "Not assigned";
+        exp = 0;
     }
 }
